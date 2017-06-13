@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/invitation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x60"
+            android:background="#232325">
+
+
+            <ImageView
+                android:id="@+id/invitation_btn_back"
+                android:layout_width="@dimen/x60"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_btn_press"
+                android:scaleType="centerInside"
+                android:src="@mipmap/back_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="群聊邀请"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/invitation_btn_back"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/x18"
+                android:layout_marginLeft="@dimen/x10"/>
+
+            <Button
+                android:id="@+id/invitation_btn"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="确定"
+                android:textSize="13dp"
+                android:textColor="#fff"
+                android:background="@drawable/sendmessage_btn_press" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/invitation_titletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="邀请目标"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_below="@id/invitation_layout"
+            android:gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/invitation_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/invitation_titletext"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

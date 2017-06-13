@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:background="#232325">
+
+        <TextView
+            android:id="@+id/Login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="微信注册"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/regist_btn_back"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_btn_press"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back_btn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/regist_name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:text="昵称"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/name_xmpp"
+                android:layout_width="@dimen/x200"
+                android:layout_height="40dp"
+                android:hint="请填写昵称"
+                android:textSize="@dimen/x19"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/x50"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/regist_name_layout_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_below="@+id/regist_name_layout"
+            android:layout_alignRight="@+id/regist_name_layout"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/regist_select_photo"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:src="@drawable/select_phone_photo"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x50"
+            android:layout_alignBottom="@+id/regist_name_layout_line"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/regist_btn_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国家/地区"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中国"
+        android:textColor="@color/green"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/regist_userphone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+
+        <EditText
+            android:id="@+id/reusername_xmpp"
+            android:layout_width="180dp"
+            android:paddingLeft="15dp"
+            android:layout_height="@dimen/x50"
+            android:hint="你的手机号码"
+            android:textSize="@dimen/x19"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:layout_marginLeft="50dp"
+            android:singleLine="true"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toLeftOf="@id/username_xmpp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+
+        <EditText
+            android:id="@+id/repassword_xmpp"
+            android:layout_width="180dp"
+            android:paddingLeft="15dp"
+            android:layout_height="@dimen/x50"
+            android:hint="填写密码"
+            android:password="true"
+            android:textSize="@dimen/x19"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toLeftOf="@id/password_xmpp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+
+        <EditText
+            android:id="@+id/repassword_again_xmpp"
+            android:layout_width="180dp"
+            android:paddingLeft="15dp"
+            android:layout_height="@dimen/x50"
+            android:hint="填写确认密码"
+            android:password="true"
+            android:textSize="@dimen/x19"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toLeftOf="@id/password_xmpp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn_press"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"/>
+
+
+</LinearLayout>

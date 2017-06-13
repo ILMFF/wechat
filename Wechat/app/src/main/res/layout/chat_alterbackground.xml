@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myself_top">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="#222222"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/chat_background_back_btn"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_btn"
+            android:background="@drawable/back_btn_press"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="更改聊天背景"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/x70" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/friend_alter_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@drawable/content_press"
+        android:text="从相册选择一张"
+        android:textSize="@dimen/x18"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:paddingLeft="@dimen/x20"
+        android:drawableRight="@mipmap/right"
+        android:paddingRight="@dimen/x15"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/discover_press"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"/>
+
+    <TextView
+        android:id="@+id/friend_alter_systembackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@drawable/content_press"
+        android:text="纯色背景"
+        android:textSize="@dimen/x18"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:paddingLeft="@dimen/x20"
+        android:drawableRight="@mipmap/right"
+        android:paddingRight="@dimen/x15"/>
+
+</LinearLayout>

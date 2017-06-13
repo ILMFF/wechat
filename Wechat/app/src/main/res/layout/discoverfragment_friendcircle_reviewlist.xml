@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/friendcircle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/reviewlist">
+
+    <TextView
+        android:id="@+id/friendcircle_sender_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:textSize="@dimen/x18"
+        android:layout_toRightOf="@id/friendcircle_sendericon"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/friendcircle_sender_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/friendcircle_sender_nickname"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/x18"
+        android:textColor="@color/black"
+        android:background="@null"
+        android:enabled="false" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

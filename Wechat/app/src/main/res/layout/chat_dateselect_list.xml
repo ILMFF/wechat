@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/record_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@drawable/content_press">
+
+        <RelativeLayout
+            android:id="@+id/record_friendmessage_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/record_friendmessgae_icon"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/record_friendmessage_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-10-10"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/record_friendmessgae_icon"/>
+
+            <TextView
+                android:id="@+id/record_friendmessage_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x15"
+                android:text="昵称"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="@dimen/x2"
+                android:layout_toRightOf="@id/record_friendmessgae_icon"
+                android:layout_below="@id/record_friendmessage_time" />
+
+            <EditText
+                android:id="@+id/record_friendmessage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/friendmessage"
+                android:layout_toRightOf="@id/record_friendmessgae_icon"
+                android:layout_below="@id/record_friendmessage_nickname"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/record_mymessage_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/record_mymessage_icon"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/record_mymessage_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-10-10"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/record_mymessage_icon"/>
+
+            <TextView
+                android:id="@+id/record_mymessage_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x15"
+                android:text="昵称"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x2"
+                android:layout_toLeftOf="@id/record_mymessage_icon"
+                android:layout_below="@id/record_mymessage_time" />
+            <EditText
+                android:id="@+id/record_mymessage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mymessage"
+                android:layout_toLeftOf="@id/record_mymessage_icon"
+                android:layout_below="@id/record_mymessage_nickname"
+                android:gravity="center_vertical"
+                android:enabled="false" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

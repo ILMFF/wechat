@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myself_top">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="#222222"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/me_myself_back_btn"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_btn"
+            android:background="@drawable/back_btn_press"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="个人信息"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/x70" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/myself_icon_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"/>
+
+        <ImageView
+            android:id="@+id/myself_now_icon"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@mipmap/icon"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/popmenu_press"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"/>
+
+    <RelativeLayout
+        android:id="@+id/myself_nickname_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"/>
+
+
+        <TextView
+            android:id="@+id/myself_now_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="我的昵称"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/popmenu_press"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"/>
+
+    <RelativeLayout
+        android:id="@+id/myself_sex_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="性别"
+            android:layout_marginLeft="@dimen/x20"/>
+
+        <TextView
+            android:id="@+id/myself_now_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="未填写"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x20"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/popmenu_press"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="地区"
+            android:layout_marginLeft="@dimen/x20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myself_signature_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginTop="@dimen/x50"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="个性签名"
+            android:layout_marginLeft="@dimen/x20"/>
+
+        <TextView
+            android:id="@+id/myself_now_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未填写"
+            android:maxEms="10"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

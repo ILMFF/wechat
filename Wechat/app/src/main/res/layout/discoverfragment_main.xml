@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/myself_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/discover_myfriendCircle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:layout_marginTop="@dimen/y16"
+        android:background="@drawable/content_press"
+        android:drawableLeft="@mipmap/v2"
+        android:paddingLeft="@dimen/y20"
+        android:text="朋友圈"
+        android:textColor="#000"
+        android:textSize="@dimen/y18"
+        android:drawablePadding="@dimen/x10"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/right"
+        android:paddingRight="@dimen/x15"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

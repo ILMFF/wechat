@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Login_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:text="微信登录"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#232325"
+        android:layout_centerHorizontal="true"/>
+
+
+    <RelativeLayout
+        android:id="@+id/Login_area"
+        android:layout_below="@id/Login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国家/地区"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国"
+            android:textColor="@color/green"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Login_area_line"
+            android:layout_below="@id/Login_area"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/black"/>
+
+
+        <RelativeLayout
+            android:id="@+id/Login_userphone_layout"
+            android:layout_below="@id/Login_area_line"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+
+            <EditText
+                android:id="@+id/username_xmpp"
+                android:layout_width="180dp"
+                android:paddingLeft="15dp"
+                android:layout_height="@dimen/x50"
+                android:hint="你的手机号码"
+                android:textSize="@dimen/x19"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:singleLine="true"
+                android:inputType="number"
+                />
+
+            <!--android:inputType="number"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+86"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/username_xmpp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Login_userpassword_layout"
+            android:layout_below="@id/Login_userphone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+
+            <EditText
+                android:id="@+id/password_xmpp"
+                android:layout_width="180dp"
+                android:paddingLeft="15dp"
+                android:layout_height="@dimen/x50"
+                android:hint="填写密码"
+                android:textSize="@dimen/x19"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:layout_marginLeft="50dp"
+                android:singleLine="true"
+                android:password="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/password_xmpp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+
+        <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn_press"
+        android:layout_below="@+id/Login_userpassword_layout"
+        android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"/>
+
+    <TextView
+        android:id="@+id/regist_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击注册"
+        android:textColor="@drawable/regist_btn_press"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x20"/>
+
+
+    </RelativeLayout>
+
+
+
+    <app.dinus.com.loadingdrawable.LoadingView
+        android:id="@+id/water_bottle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff15181d"
+        android:visibility="gone"
+        app:loading_renderer="WaterBottleLoadingRenderer"/>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/myself_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/me_mymessage_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:layout_marginTop="@dimen/y16"
+                android:background="@drawable/user_contact_press"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/y50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:src="@mipmap/icon" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/user_icon"
+                    android:layout_marginTop="@dimen/x5"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@id/user_icon"
+                    android:text="微信"
+                    android:textSize="@dimen/x18" />
+
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/qrcode" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/me_myfavorite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y60"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@drawable/content_press"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/icon_me_collect"
+                android:drawablePadding="@dimen/x10"
+                android:drawableRight="@mipmap/right"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/y16"
+                android:paddingRight="@dimen/x15"
+                android:text="收藏"
+                android:textColor="#000"
+                android:textSize="@dimen/y18" />
+
+
+
+
+            <TextView
+                android:id="@+id/me_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y60"
+                android:layout_marginTop="@dimen/y5"
+                android:background="@drawable/content_press"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/icon_me_setting"
+                android:drawablePadding="@dimen/x10"
+                android:drawableRight="@mipmap/right"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/y16"
+                android:paddingRight="@dimen/x15"
+                android:text="设置"
+                android:textColor="#000"
+                android:textSize="@dimen/y18" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

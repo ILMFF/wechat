@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="#222222"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/me_nickname_back_btn"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_btn"
+            android:background="@drawable/back_btn_press"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="更改名字"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/x70" />
+
+        <Button
+            android:id="@+id/me_nickname_save"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/search_fiend"
+            android:textSize="@dimen/x16"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/me_edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:background="@null"
+        android:hint="请输入你的昵称"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x30"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/green"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好名字可以让你的朋友更容易记住你"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginLeft="@dimen/x20"/>
+
+</LinearLayout>

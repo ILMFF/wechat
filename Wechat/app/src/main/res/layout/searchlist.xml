@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/search_friend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:background="@drawable/content_press"
+        android:clickable="true">
+
+
+        <ImageView
+            android:id="@+id/search_friend_icon"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x10"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/search_friend_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:layout_toRightOf="@id/search_friend_icon"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"/>
+
+        <TextView
+            android:id="@+id/search_friend_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/search_friend_icon"
+            android:layout_below="@id/search_friend_nickname"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginLeft="@dimen/x10"
+            android:singleLine="true"
+            android:maxEms="10"
+            android:text="个性签名:"/>
+
+        <Button
+            android:id="@+id/search_friend_add"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x40"
+            android:text="添加"
+            android:textSize="@dimen/x17"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/search_fiend" />
+
+        <Button
+        android:id="@+id/search_friend_alreadysend"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x40"
+        android:enabled="false"
+        android:text="已发送"
+        android:textSize="@dimen/x17"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@drawable/already_search_fiend_btn"
+        android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/search_friend_checkornot"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x50"
+            android:enabled="false"
+            android:text="已经是好友"
+            android:textSize="@dimen/x17"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@color/green"
+            android:visibility="gone"/>
+
+        
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

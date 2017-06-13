@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <LinearLayout
+            android:id="@+id/contact_toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:translationZ="@dimen/y8">
+
+            <TextView
+                android:id="@+id/contact_newfriend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y70"
+                android:layout_marginBottom="@dimen/y1"
+                android:background="@drawable/content_press"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/add_newfriend"
+                android:drawablePadding="@dimen/x10"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:text="新的朋友"
+                android:textSize="@dimen/x19"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/reviewlist"/>
+
+            <TextView
+                android:id="@+id/contact_chattogether"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y70"
+                android:background="@drawable/content_press"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/chat_together"
+                android:drawablePadding="@dimen/x10"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:text="群聊"
+                android:layout_marginTop="@dimen/y1"
+                android:textSize="@dimen/x19"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/reviewlist"/>
+
+
+        </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/contact_refresh"
+        android:layout_below="@id/contact_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/contact_friendlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/x10" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x20"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x6"
+        android:orientation="vertical"
+        android:divider="@color/reviewlist"
+        android:translationZ="@dimen/y80">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:src="@mipmap/up_char" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/y2"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:src="@mipmap/star_char" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/x3"
+            android:text="ABCDE FGH I  J K LMNOPQRSTUVWXYZ#"
+            android:textSize="@dimen/x17" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

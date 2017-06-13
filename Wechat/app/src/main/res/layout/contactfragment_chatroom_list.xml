@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/contact_chatroomlist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:background="@drawable/content_press">
+
+        <ImageView
+            android:id="@+id/contact_chatroom_img"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon" />
+
+
+        <TextView
+            android:id="@+id/contact_chatroom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/contact_chatroom_img"
+            android:textSize="@dimen/x17"
+            android:text="名称" />
+    </RelativeLayout>
+
+</LinearLayout>

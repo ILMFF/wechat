@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@drawable/chatactivity_press">
+
+    <RelativeLayout
+        android:id="@+id/friendmessage_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/friendmessgae_icon"
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/x60"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/friendmessage_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-10-10"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/friendmessgae_icon"/>
+
+    <TextView
+        android:id="@+id/friendmessage_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x15"
+        android:text="昵称"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x2"
+        android:layout_toRightOf="@id/friendmessgae_icon"
+        android:layout_below="@id/friendmessage_time" />
+
+    <EditText
+        android:id="@+id/friendmessage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friendmessage"
+        android:layout_toRightOf="@id/friendmessgae_icon"
+        android:layout_below="@id/friendmessage_nickname"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColor="#6e6e6e"
+        android:textSize="@dimen/x18"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mymessage_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/mymessgae_icon"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/mymessage_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-10-10"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/mymessgae_icon"/>
+
+            <TextView
+                android:id="@+id/mymessage_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x15"
+                android:text="昵称"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x2"
+                android:layout_toLeftOf="@id/mymessgae_icon"
+                android:layout_below="@id/mymessage_time" />
+        <EditText
+            android:id="@+id/mymessage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mymessage"
+            android:layout_toLeftOf="@id/mymessgae_icon"
+            android:layout_below="@id/mymessage_nickname"
+            android:gravity="center"
+            android:textColor="#6e6e6e"
+            android:enabled="false"
+            android:textSize="@dimen/x18"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/search_friend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/content_press"
+        android:clickable="true">
+
+
+        <ImageView
+            android:id="@+id/contactfragment_request_icon"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/contactfragment_request_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:layout_alignTop="@id/contactfragment_request_icon"
+            android:layout_toRightOf="@id/contactfragment_request_icon"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"/>
+
+        <TextView
+            android:id="@+id/contactfragment_request_bz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/contactfragment_request_icon"
+            android:layout_below="@id/contactfragment_request_nickname"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginLeft="@dimen/x10"
+            android:singleLine="true"
+            android:maxEms="10"
+            android:text="对方请求添加你为好友"/>
+
+
+
+        <Button
+            android:id="@+id/contactfragment_request_refusebtn"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x40"
+            android:text="拒绝"
+            android:textSize="@dimen/x17"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/search_fiend" />
+
+        <Button
+            android:id="@+id/contactfragment_request_addbtn"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x40"
+            android:text="接受"
+            android:textSize="@dimen/x17"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@id/contactfragment_request_refusebtn"
+            android:background="@drawable/search_fiend" />
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="#222222">
+
+        <ImageView
+            android:id="@+id/contact_newfriend_back_btn"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_btn"
+            android:background="@drawable/back_btn_press"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="新的朋友"
+            android:textColor="#fff"
+            android:textSize="@dimen/x22"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/contact_newfriend_back_btn"/>
+
+
+        <TextView
+            android:id="@+id/contact_newfriend_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加朋友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_newfriend_searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/contact_newfriend_searchtext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50"
+            android:hint="请输入手机号"
+            android:textSize="@dimen/x20"
+            android:drawablePadding="@dimen/x5"
+            android:drawableLeft="@mipmap/contact_newfriend_search"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_below="@id/contact_newfriend_searchtext"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@color/black"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新的朋友"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x10"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_newfriend_requestlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

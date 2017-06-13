@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="teacher.davisstore.com.wechat">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="毕设微信"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace = "android:label">
+        <activity android:name=".Login_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BaseActivity"/>
+        <activity android:name=".Register_main"/>
+        <activity android:name="weixin.Chat_Activity"/>
+        <activity android:name="title.AddNewFriend"/>
+        <activity android:name="title.SearchFriend"/>
+        <activity android:name="contact.ContactFragment_newfriends"/>
+        <activity android:name="me.Me_MyselfMessageSetting"/>
+        <activity android:name="me.Me_NickName_Setting"/>
+        <activity android:name="me.Me_Signature_Setting"/>
+        <activity android:name="weixin.Chat_FriendMessage"/>
+        <activity android:name="me.Me_SystemSetting"/>
+        <activity android:name="weixin.Chat_AlterBackground"/>
+        <activity android:name="weixin.Chat_BackgroundSelect"/>
+        <activity android:name="weixin.Chat_CheckChatRecord"/>
+        <activity android:name="discover.DiscoverFragment_FriendCirCle"/>
+        <activity android:name="discover.DiscoverFragment_sendmessage"/>
+        <activity android:name="me.MeFragment_favorite"/>
+        <activity android:name="title.ChatInvitation"/>
+        <activity android:name="contact.ContactFragment_chattogether"/>
+        <activity android:name="weixin.ChatTogether_Activity"/>
+        <activity android:name="weixin.Chat_ChatRoomMessage"/>
+        <activity android:name="weixin.Chat_ChatRoomInvite"/>
+
+
+       <receiver android:name="weixin.WeiXinFragment_main$MessageReceiver">
+           <intent-filter>
+               <action android:name="com.broadcast.message"/>
+           </intent-filter>
+       </receiver>
+
+        <receiver android:name="weixin.Chat_Activity$MessageReceiver">
+            <intent-filter>
+                <action android:name="com.broadcast.DisplayMesaage"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="contact.ContactFragment_main$MessageReceiver">
+
+            <intent-filter>
+                <action android:name="com.broadcast.contactchange"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="contact.adpter.UserFriendRecycleAdapter$MessageReceiver">
+
+            <intent-filter>
+                <action android:name="com.broadcast.deletefriend"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="discover.adapter.FriendCircleAdapter$MessageReceiver">
+            <intent-filter>
+                <action android:name="com.broadcast.FriendCircleRefresh"/>
+            </intent-filter>
+        </receiver>
+
+       <receiver android:name="me.adapter.FavoriteAdapter$MessageReceiver">
+           <intent-filter>
+               <action android:name="com.broadcast.myfavorite"/>
+           </intent-filter>
+       </receiver>
+
+        <receiver android:name="discover.adapter.FriendCircleReviewListAdapter$MessageReceiver">
+            <intent-filter>
+                <action android:name="com.broadcast.reviewchange"/>
+            </intent-filter>
+        </receiver>
+
+
+
+
+    </application>
+
+</manifest>

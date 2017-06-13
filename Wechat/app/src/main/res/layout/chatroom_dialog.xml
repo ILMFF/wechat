@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x10"
+        android:gravity="center"
+        android:text="设置群聊名字"
+        android:textColor="#fffffb"
+        android:textSize="@dimen/x20"
+        android:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center"
+        android:hint="名字"
+        android:maxLength="15"
+        android:textSize="@dimen/x16"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/x20"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+    <!-- </LinearLayout> -->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50"
+            android:background="@drawable/chatroomsetting_btn_press"
+            android:text="确定"
+            android:textSize="@dimen/x16"
+            android:layout_marginLeft="@dimen/x30"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@color/cancle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x16"
+            android:text="取消"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+</LinearLayout>

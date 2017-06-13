@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/x230"
+        android:layout_height="@dimen/x50"
+        android:orientation="horizontal"
+        android:background="@drawable/review_bg">
+
+        <TextView
+            android:id="@+id/mylike_btn"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/x18"
+            android:text="赞"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/x10"
+            android:drawableLeft="@mipmap/like"
+            android:drawablePadding="@dimen/x5"
+            android:clickable="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/line" />
+
+        <TextView
+            android:id="@+id/myreview_btn"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/x18"
+            android:text="评论"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/x5"
+            android:drawableLeft="@mipmap/myreview"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

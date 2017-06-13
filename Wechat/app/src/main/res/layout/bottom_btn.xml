@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/bottom_wechat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y70"
+            android:layout_weight="1">
+                
+
+
+                <ImageView
+                    android:id="@+id/wechat_img"
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/y40"
+                    android:src="@mipmap/weixin_normal"
+                    android:layout_centerHorizontal="true" 
+                    android:layout_marginTop="@dimen/y10"/>
+
+                <TextView
+                    android:id="@+id/wechat_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    android:textSize="@dimen/x17"
+                    android:layout_below="@id/wechat_img"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/wechat_tip_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/tip_point"
+                    android:text="11"
+                    android:scaleY="0.9"
+                    android:scaleX="0.9"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:layout_toRightOf="@id/wechat_img"
+                    android:visibility="gone"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bottom_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/contact_img"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y40"
+                android:src="@mipmap/contact_list_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y10"/>
+
+            <TextView
+                android:id="@+id/contact_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通讯录"
+                android:textSize="@dimen/x17"
+                android:layout_below="@id/contact_img"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bottom_discover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/discover_img"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y40"
+                android:src="@mipmap/find_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y10"/>
+
+            <TextView
+                android:id="@+id/discover_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现"
+                android:textSize="@dimen/x17"
+                android:layout_below="@id/discover_img"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/discover_tip_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/discover_img"
+                android:background="@mipmap/tip_point"
+                android:scaleX="0.4"
+                android:scaleY="0.4" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bottom_myself"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/myself_img"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y40"
+                android:src="@mipmap/profile_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y10"/>
+
+            <TextView
+                android:id="@+id/myself_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我"
+                android:textSize="@dimen/x17"
+                android:layout_below="@id/myself_img"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

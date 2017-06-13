@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/message_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="#222222"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/searchfriend_back_btn"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_btn"
+            android:background="@drawable/back_btn_press"/>
+
+        <EditText
+            android:id="@+id/friend_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y48"
+            android:layout_marginRight="@dimen/x90"
+            android:textColor="#fff"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="@dimen/x10"
+            android:background="@null"
+            android:textCursorDrawable="@color/white"
+            android:layout_toRightOf="@id/searchfriend_back_btn"
+            android:layout_centerVertical="true"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/search_friend_btn"
+            android:layout_width="@dimen/x65"
+            android:layout_height="@dimen/x40"
+            android:text="搜索"
+            android:textSize="@dimen/x17"
+            android:textColor="@color/white"
+            android:background="@drawable/search_fiend"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@id/friend_name"
+            android:layout_alignRight="@id/friend_name"
+            android:layout_below="@id/friend_name"
+            android:background="@color/green"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchfirend_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
